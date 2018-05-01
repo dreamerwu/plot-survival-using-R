@@ -9,7 +9,7 @@ ls(data)
 fit=survfit(Surv(data$time,data$status)~Pyrimidine_score,data=data)
 ggsurvplot(fit,data=data,pval=TRUE)
 
-
+surv_median(fit) # calculate median survival time
 
 
 
